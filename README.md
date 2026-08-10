@@ -1,23 +1,4 @@
-English | [简体中文](README_ch.md)
 
-<p align="center">
- <img src="./docs/imgs/paddlehub_logo.jpg" align="middle" width="400" />
-<p align="center">
-<div align="center">  
-  <h3> <a href=#QuickStart> Quick Start </a> | <a href="./modules"> Model List </a> | <a href=#demos> Demos </a> </h3>
-</div>
-
-------------------------------------------------------------------------------------------
-
-<p align="center">
-    <a href="./LICENSE"><img src="https://img.shields.io/badge/license-Apache%202-dfd.svg"></a>
-    <a href=""><img src="https://img.shields.io/badge/python-3.6.2+-aff.svg"></a>
-    <a href=""><img src="https://img.shields.io/badge/os-linux%2C%20win%2C%20mac-pink.svg"></a>
-    <a href=""><img src="https://img.shields.io/pypi/format/paddlehub?color=c77"></a>
-    <a href="https://pypi.org/project/paddlehub/"><img src="https://img.shields.io/pypi/dm/paddlehub?color=9cf"></a>
-    <a href="https://github.com/PaddlePaddle/PaddleHub/stargazers"><img src="https://img.shields.io/github/stars/PaddlePaddle/PaddleHub?color=ccf"></a>
-    <a href="https://huggingface.co/PaddlePaddle"><img src="https://img.shields.io/badge/%F0%9F%A4%97-Hugging%20Face-blue"></a>
-</p>
 
 
 ## ⭐Features
@@ -101,17 +82,17 @@ English | [简体中文](README_ch.md)
     <tbody>
         <tr>
             <td align = "center">
-            <a href="https://paddlespeech.bj.bcebos.com/PaddleAudio/en.wav" rel="nofollow">
+            <a href="https://Multimodalspeech.bj.bcebos.com/MultimodalAudio/en.wav" rel="nofollow">
                     <img align="center" src="./docs/imgs/Readme_Related/audio_icon.png" width=250 ></a><br>
             </td>
             <td >I knocked at the door on the ancient side of the building.</td>
             </tr>
             <tr>
             <td align = "center">
-            <a href="https://paddlespeech.bj.bcebos.com/PaddleAudio/zh.wav" rel="nofollow">
+            <a href="https://Multimodalspeech.bj.bcebos.com/MultimodalAudio/zh.wav" rel="nofollow">
                     <img align="center" src="./docs/imgs/Readme_Related/audio_icon.png" width=250></a><br>
             </td>
-            <td>我认为跑步最重要的就是给我带来了身体健康。</td>
+           
         </tr>
     </tbody>
 </table>
@@ -154,26 +135,6 @@ English | [简体中文](README_ch.md)
 !pip install --upgrade paddlehub
 ```
 
-#### 🛫The simplest cases of Chinese word segmentation.
-
-```python
-import paddlehub as hub
-
-lac = hub.Module(name="lac")
-test_text = ["今天是个好天气。"]
-
-results = lac.cut(text=test_text, use_gpu=False, batch_size=1, return_tag=True)
-print(results)
-#{'word': ['今天', '是', '个', '好天气', '。'], 'tag': ['TIME', 'v', 'q', 'n', 'w']}
-```
-#### 🛰️The simplest command of deploying lac service.
-</div>
-
-```python
-!hub serving start -m lac
-```
-
-- 📣More model description, please refer [Models List](./modules)
 
 <a name="License"></a>
 ## 📚License
