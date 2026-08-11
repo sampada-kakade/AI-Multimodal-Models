@@ -21,9 +21,6 @@
 ## 🌈Visualization Demo
 
 
-
-
-
 #### 🏜️ [Text-to-Image Models](https://github.com/PaddlePaddle/PaddleHub/tree/develop/modules/image/text_to_image)
 <div align="center">
 <table>
